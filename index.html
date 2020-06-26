@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+
+		<title> Simple Calculator </title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="author" content="John Mistica">
+		<meta name="keyword" content="calculator" content="simple calculator">
+		<meta name="description" content="Simple calculator for practice">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge chrome=1">
+		<link rel="icon" type="image" href="img/calculator-solid.png">
+
+		<!-- Calculator style -->
+		<link rel="stylesheet" type="text/css" href="css/calculator_style.css">
+		<!-- Jquery -->
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<!-- Bootstrap -->
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+	</head>
+
+	<body>
+		
+		<div class="container-fluid">
+
+			<div class="row">
+
+				<!-- Window size indicator -->
+				<div class="col-12">
+					<h6 id="window-size-indicator"></h6>
+				</div>
+
+			</div>
+			
+
+			<div class="row">
+
+				<div class="col-12" align="center">
+
+					<!-- Start of calculator frame -->
+					<div id="cal-frame" class="shadow" align="center">
+						<table>
+							<tr>
+								<th colspan="4">
+									<input type="text" name="" value="0" id="cal-display" readonly>
+								</th>
+							</tr>
+
+							<tr align="center">
+								<td>
+									<input type="button" name="btn-clear" value="AC" class="cal-btn" onclick="btnClear_Event()">
+								</td>
+								<td>
+									<input type="button" name="btn-backspace" value="←" class="cal-btn" onclick="btnBkspace_Event()">
+								</td>
+								<td>
+									<input type="button" name="btn-operator" value="mod" class="cal-btn" onclick="btnOp_Event(this.value)">
+								</td>
+								<td>
+									<input type="button" name="btn-operator" value="÷" class="cal-btn" onclick="btnOp_Event(this.value)">
+								</td>
+							</tr>
+
+							<tr align="center">
+								<td>
+									<input type="button" name="btn-number" value="7" class="cal-btn" onclick="btnNum_Event(this.value)">
+								</td>
+								<td>
+									<input type="button" name="btn-number" value="8" class="cal-btn" onclick="btnNum_Event(this.value)">
+								</td>
+								<td>
+									<input type="button" name="btn-number" value="9" class="cal-btn" onclick="btnNum_Event(this.value)">
+								</td>
+								<td>
+									<input type="button" name="btn-operator" value="×" class="cal-btn" onclick="btnOp_Event(this.value)">
+								</td>
+							</tr>
+
+							<tr align="center">
+								<td>
+									<input type="button" name="btn-number" value="4" class="cal-btn" onclick="btnNum_Event(this.value)">
+								</td>
+								<td>
+									<input type="button" name="btn-number" value="5" class="cal-btn" onclick="btnNum_Event(this.value)">
+								</td>
+								<td>
+									<input type="button" name="btn-number" value="6" class="cal-btn" onclick="btnNum_Event(this.value)">
+								</td>
+								<td>
+									<input type="button" name="btn-operator" value="−" class="cal-btn" onclick="btnOp_Event(this.value)">
+								</td>
+							</tr>
+
+							<tr align="center">
+								<td>
+									<input type="button" name="btn-number" value="1" class="cal-btn" onclick="btnNum_Event(this.value)">
+								</td>
+								<td>
+									<input type="button" name="btn-number" value="2" class="cal-btn" onclick="btnNum_Event(this.value)">
+								</td>
+								<td>
+									<input type="button" name="btn-number" value="3" class="cal-btn" onclick="btnNum_Event(this.value)">
+								</td>
+								<td>
+									<input type="button" name="btn-operator" value="+" class="cal-btn" onclick="btnOp_Event(this.value)">
+								</td>
+							</tr>
+
+							<tr align="center">
+								<td>
+									<input type="button" name="btn-negative-positive" value="±" class="cal-btn" onclick="btnNeg_Event()">
+								</td>
+								<td>
+									<input type="button" name="btn-number" value="0" class="cal-btn" onclick="btnNum_Event(this.value)">
+								</td>
+								<td>
+									<input type="button" name="btn-point" value="." class="cal-btn" onclick="btnPt_Event()">
+								</td>
+								<td>
+									<input type="button" name="btn-equal" value="=" class="cal-btn" onclick="btnEql_Event()">
+								</td>
+							</tr>
+						</table>
+
+						<!-- Copyright -->
+						<p style="padding: 0; margin: 5px 0; text-align: center; font-family: 'Calibri Light'; font-weight: 200">&copy;2020 John Mistica</p>
+
+					</div>
+					<!-- End of calculator frame -->
+
+				</div>
+
+			</div>
+		</div>
+		
+
+
+		<!-- Window size indicators script -->
+		<script type="text/javascript" src="js/window_size_indicator.js"></script>
+		<!-- Add-ons functions script -->
+		<script type="text/javascript" src="js/add-ons_functions.js"></script>
+		<!-- Calculator script -->
+		<script type="text/javascript" src="js/calculator_script.js"></script>
+
+	</body>
+</html>
