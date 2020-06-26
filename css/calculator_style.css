@@ -1,0 +1,52 @@
+body {
+	height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-image: linear-gradient(0deg, transparent 50%, #aaa 100%), linear-gradient(90deg, #aaa 50%, #ddd 50%);
+	background-size: 4px 4px,4px 4px;
+	background-position:0 0, 0 25px;
+}
+
+@font-face {
+	font-family: Calculator;
+	src: url("fonts/Calculator.ttf");
+}
+
+
+
+#cal-display {
+	text-align: right;
+	width: 100%;
+	margin-bottom: 20px;
+	font-family: Calculator;
+	font-weight: 500;
+	font-size: 34pt;
+	padding: 0;
+}
+
+.cal-btn {
+	width: 100%;
+	height: 100%;
+	font-family: 'Calibri';
+	font-size: 18pt;
+}
+
+#cal-frame {
+	background-color: #fff;
+	border: 1px solid #000; 
+	border-radius: 5px;
+	margin-top: 50px;
+	padding: 15px 15px 0;
+	width: 380px;
+}
+
+input[name=btn-clear], input[name=btn-backspace] {
+	font-weight: bolder;
+}
+
+td {
+	box-sizing: border-box;
+	width: 90px !important;
+	height: 55px !important;
+}
